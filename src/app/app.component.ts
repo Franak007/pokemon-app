@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import {Pokemon} from "./pokemons";
+import {POKEMONS} from "./mock-pockemons-list";
 
 @Component({
   selector: 'app-root',
@@ -6,7 +8,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AppComponent implements OnInit {
   title: string = 'pokemon-app';
-  pokemonList: string[] = ["Pikachu", "Salamèche", "Lippoutou"];
+  pokemonList: Pokemon[] = POKEMONS;
 
   ngOnInit(): void {
     console.log("Je viens de charger!");
@@ -16,7 +18,7 @@ export class AppComponent implements OnInit {
 
   }
 
-  selectPokemon(pokemon: string): void {
-    console.log("Vous avez sélectionné ce Pokemon : " + pokemon)
+  selectPokemon(pokemon: Pokemon): void {
+    console.log("Vous avez sélectionné ce Pokemon : " + pokemon.name)
   }
 }
