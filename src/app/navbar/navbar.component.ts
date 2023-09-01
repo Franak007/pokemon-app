@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  //Cette variable se change à la connection
+  isConnected: number = 0;
+
 }
