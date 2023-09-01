@@ -1,7 +1,13 @@
+<input class="container"
+       #input
+       (keyup.enter)="afficheNumberPokemon(+input.value)"
+       type="text"
+>
+
 <div class="container card-group">
     <div *ngFor="let pokemon of pokemonList" class="pokemon col-3">
         <div class="card m-2 p-3 border border-dark">
-            <img src="{{pokemon.picture}}" class="card-img-top" alt="pokemon">
+            <img (click)="selectPokemon(pokemon)" src="{{pokemon.picture}}" class="card-img-top" alt="pokemon">
             <div class="card-body">
                 <h5 class="card-title text-center">{{pokemon.name}}</h5>
                 <p class="card-text text-center">{{pokemon.created}}</p>
