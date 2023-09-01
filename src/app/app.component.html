@@ -1,2 +1,15 @@
 <h1>Liste de Pokemons</h1>
-<a href="{{pokemonList[11].picture}}">{{pokemonList[11].name}}</a>
+
+<br>
+
+<div class="container card-group">
+    <div *ngFor="let pokemon of pokemonList" class="pokemon col-3">
+        <div class="card m-2 p-3">
+            <img src="{{pokemon.picture}}" class="card-img-top" alt="pokemon">
+            <div class="card-body">
+                <h5 class="card-title">{{pokemon.name}}</h5>
+                <p class="card-text">{{pokemon.created}}</p>
+            </div>
+        </div>
+    </div>
+</div>
