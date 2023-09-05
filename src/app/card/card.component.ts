@@ -8,7 +8,7 @@ import {PokemonService} from "../pokemon.service";
   templateUrl: `card.component.html`,
   styles: []
 })
-export class CardComponent {
+export class CardComponent implements OnInit{
 
   title: string = 'pokemon-app';
   pokemon: Pokemon;
