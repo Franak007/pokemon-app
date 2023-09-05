@@ -5,12 +5,15 @@
 >
 
 <div class="container card-group">
-    <div *ngFor="let pokemon of pokemonList" class="pokemon col-3">
+    <div *ngFor="let pokemon of pokemonList;" class="pokemon col-3">
         <div class="card m-2 p-3 border border-dark">
-            <img (click)="selectPokemon(pokemon)" src="{{pokemon.picture}}" class="card-img-top" alt="pokemon">
+            <a routerLink="/pokemons/{{pokemon.id}}">
+                <img src="{{pokemon.picture}}" class="card-img-top" alt="pokemon">
+            </a>
             <div class="card-body">
                 <h5 class="card-title text-center">{{pokemon.name}}</h5>
                 <p class="card-text text-center">{{pokemon.created}}</p>
+                <a routerLink="/pokemons/{{pokemon.id}}" (click)="getPokemonByName(pokemon)">This is a Link</a>
             </div>
         </div>
     </div>

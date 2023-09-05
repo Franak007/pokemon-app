@@ -12,4 +12,14 @@ export class PokemonService {
   fetchAllPokemon(){
     return POKEMONS;
   }
+
+  fetchById(id:number):Pokemon|undefined{
+    return POKEMONS[id];
+  }
+
+  fetchByName(pokemon: Pokemon){
+    return pokemon.name;
+  }
+
+
 }

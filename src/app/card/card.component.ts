@@ -11,6 +11,7 @@ import {PokemonService} from "../pokemon.service";
 export class CardComponent {
 
   title: string = 'pokemon-app';
+  pokemon: Pokemon;
   pokemonList: Pokemon[] = [];
   pokemonSelected: Pokemon;
 
@@ -24,12 +25,10 @@ export class CardComponent {
     console.log("Je viens de charger!");
     console.table(this.pokemonList);
 
-    this.selectPokemon(this.pokemonList[0]);
-
   }
 
-  selectPokemon(pokemon: Pokemon): void {
-    console.log("Vous avez sélectionné ce Pokemon : " + pokemon.name);
+  selectPokemon(id:number): void {
+    console.log("Vous avez sélectionné ce Pokemon : " );
   }
 
   afficheNumberPokemon(index: number)  {
@@ -43,6 +42,10 @@ export class CardComponent {
   getPokemons() {
     this.pokemonList = this.pokemonService.fetchAllPokemon();
     return this.pokemonList;
+  }
+
+  getPokemonByName(pokemon:Pokemon) {
+    console.log(this.pokemonService.fetchByName(pokemon))
   }
 }
 
