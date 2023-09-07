@@ -10,7 +10,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { Error404Component } from './error404/error404.component';
 import { CardDetailComponent } from './card-detail/card-detail.component';
 import { ContactComponent } from './contact/contact.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { ContactReactiveComponent } from './contact-reactive/contact-reactive.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +22,14 @@ import {FormsModule} from "@angular/forms";
     NavbarComponent,
     Error404Component,
     CardDetailComponent,
-    ContactComponent
+    ContactComponent,
+    ContactReactiveComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+      ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
