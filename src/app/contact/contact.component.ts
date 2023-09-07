@@ -7,7 +7,6 @@ import {NgForm} from "@angular/forms";
   styles: []
 })
 export class ContactComponent {
-  contactForm: NgForm
   onSubmit(form: NgForm) {
     console.log(form.value);
   }

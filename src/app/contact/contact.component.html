@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit(contactForm)">
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
     <input type="text" class="m-3" name="username" ngModel required><br>
     <input type="password" class="m-3" name="password" ngModel required><br>
     <button type="submit" [disabled]="!contactForm.valid" class="btn btn-primary m-3">Login</button>
