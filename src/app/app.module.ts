@@ -9,6 +9,8 @@ import { ArticleComponent } from './article/article.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { Error404Component } from './error404/error404.component';
 import { CardDetailComponent } from './card-detail/card-detail.component';
+import { ContactComponent } from './contact/contact.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { CardDetailComponent } from './card-detail/card-detail.component';
     ArticleComponent,
     NavbarComponent,
     Error404Component,
-    CardDetailComponent
+    CardDetailComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

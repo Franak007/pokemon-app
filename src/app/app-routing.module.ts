@@ -5,12 +5,14 @@ import {ArticleComponent} from "./article/article.component";
 import {Error404Component} from "./error404/error404.component";
 import {CardComponent} from "./card/card.component";
 import {CardDetailComponent} from "./card-detail/card-detail.component";
+import {ContactComponent} from "./contact/contact.component";
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'pokemons', component: CardComponent},
   {path: 'pokemons/:id', component: CardDetailComponent},
   {path: 'article', component: ArticleComponent},
+  {path: 'contact', component: ContactComponent},
   {path: '**', component: Error404Component}
 ];
 
