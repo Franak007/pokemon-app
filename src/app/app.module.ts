@@ -29,7 +29,7 @@ import { ContactReactiveComponent } from './contact-reactive/contact-reactive.co
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-      ReactiveFormsModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
