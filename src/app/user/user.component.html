@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div *ngFor="let user of users">
+                <p>{{user.name}}
+                    <button (click)="selectUser(user)" type="button" class="btn btn-secondary btn-sm m-1"> Voir le détail </button>
+                    <button type="submit" routerLink="/user/{{user.id}}" class="btn btn-primary btn-sm m-1"> Voir dans <br> une autre page </button>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

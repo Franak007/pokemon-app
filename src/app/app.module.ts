@@ -12,6 +12,7 @@ import { CardDetailComponent } from './card-detail/card-detail.component';
 import { ContactComponent } from './contact/contact.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ContactReactiveComponent } from './contact-reactive/contact-reactive.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContactReactiveComponent } from './contact-reactive/contact-reactive.co
     Error404Component,
     CardDetailComponent,
     ContactComponent,
-    ContactReactiveComponent
+    ContactReactiveComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
