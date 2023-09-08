@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ContactReactiveComponent } from './contact-reactive/contact-reactive.component';
 import { UserComponent } from './user/user.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { UserComponent } from './user/user.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
